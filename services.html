@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editing Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    display: flex;
+
+}
+.sidebar{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 1000px;
+    padding: 29px;
+    line-height: 20px;
+    color: white;
+    background:rgb(125, 125, 207)
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 6px;
+}
+.main{
+    height: 88px;
+    padding: relative;
+    list-style: none;
+    padding: 0;
+
+}
+.main li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.main li:hover{
+    background: wheat;
+}
+.main a {
+    color: white;
+    align-items: center;
+    gap: 2.6rem;
+    display: flex;
+    text-decoration: none;
+}
+.main a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+
+}
+/* main body section *** */
+.main--content{
+
+position: relative;
+background-color: rgb(42, 62, 57);
+width: 100%;
+padding: 1rem;
+
+}
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid black;
+    
+
+}
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+
+}
+.header--title{
+    color: rgb(red, green, blue);
+}
+.user--info{
+    display: flex;
+    align-items: center;
+    gap: 1;
+
+}
+.search--box{
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(red, green, blue, alpha);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+.search--box input{
+    background: transparent;
+    padding: 10px;
+
+}
+.search--box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.search--box i:hover{
+    transform: scale(1.2);
+}
+
+/* clock */
+#time{
+    text-align: center;
+    color: rgb(13, 19, 181);
+}
+
+/* video effect*/
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+        .container{
+               max-width: 1200px;
+               width: 100%;
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+               gap: 3rem;
+               
+        }
+
+        .item1{
+            height: 400px;
+        background: url(vishal\ 1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;    
+        border: 3px solid white;
+        }
+        .item2{
+            height: 400px;
+        background: url(vishal\ 3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid white;
+        }
+        .item3{
+            height: 400px;
+        background: url(bablu\ 2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid white;
+        
+        }
+        .item4{
+            height: 400px;
+        background: url(bhola\ 4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+            border: 3px solid white;
+        
+        }
+        .item5{
+            height: 400px;
+        background: url(bablu\ 2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+            border: 3px solid white;
+        
+        }
+        .item6{
+            height: 400px;
+        background: url(mahesh\ 5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid white;
+        
+        }
+        .item7{
+            height: 400px;
+        background: url(vinod\ 7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+            border: 3px solid white;
+        
+        }
+        .item8{
+            height: 400px;
+        background: url(vishal\ 3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+            border: 3px solid white;
+        
+        }
+        .item img{
+            width: 300px;
+            
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+
+        }
+        #aside{
+            grid-area: aside;
+        }
+        .name{
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .new{
+            width: 600px;
+            padding: 400px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <div class="main">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question-circle"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-star"></i>
+                        <span>Testimonials</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>LogOut</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search" />
+            </div>
+            <img src="photo.jpg" alt="">
+        </div>
+        
+        </div>
+        <div id="time">
+            <h1>Gallary 🖼️ </h1>
+        </div>
+        <div>
+        
+
+            
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+
+         
+             </div>
+    </div>
+
+
+
+
+ 
+    </div>
+</body>
+</html>
